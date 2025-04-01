@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slei's Birthday</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: aliceblue;
+            font-family: calibri;
+        }
+
+        .wrapper{
+            position: relative;
+            width: 240px;
+            height: 480px;
+        }
+
+        .cake{
+            background-color: currentColor;
+            position: absolute;
+            bottom: 0;
+        }
+        
+        .lyr{
+            width: 240px;
+            height: 96px;
+            position: absolute;
+            background-color: currentColor;
+            border-radius: 120px / 24px;
+        }
+
+        .lyr-1{
+            background: #FCE5CD;
+            box-shadow: inset 0px -4px 6px rgba(252, 229, 205, 0.833);
+            bottom: 0;
+            border: 1px;
+        }
+        .lyr-2{
+            background: #FFC0CB;
+            box-shadow: inset 0px -4px 6px rgba(255, 192, 203);
+            bottom: 48px;
+        }
+        .lyr-3{
+            background: #FF6B81;
+            box-shadow: inset 0px -4px 6px rgba(255, 80, 110, 0.6);
+            bottom: 96px; 
+        }
+
+        .candle{
+            position: absolute;
+            background-color: red;
+            height: 104px;
+            width: 14px;
+            left: 113px;
+            bottom: 165px;
+            border-radius: 20px / 10px;
+            background-image: repeating-linear-gradient(45deg, rgb(230, 161, 236), white 10%, transparent 10%, transparent 20%);
+        }
+
+        .candle::before{
+            content: '';
+            position: absolute;
+            background-color: rgb(182, 148, 203);
+            width: 4px;
+            height: 17px;
+            border-radius: 4px / 2.4px;
+            left: 5px;
+            top: -14px;
+        }
+
+        .candle::after{
+            display: block;
+            background-color: red;
+            content: '';
+            width: 14.1px;
+            height: 4px;
+            border-radius: 50%;
+        }
+
+        .frame{
+            position: absolute;
+            left: 104px;
+        }
+
+        .smoke{
+            position: relative;
+            background-color: currentColor;
+            color: black;
+            top: 179px;
+            width: 4px;
+            height: 4px;
+            animation-name: burn-smoke;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+        }
+
+
+        .smk-1{
+            left: 22px;
+            animation-duration: .5s;
+        }
+
+        .smk-2{
+            left: 16px;
+            animation-duration: .6s;
+        }
+
+        .smk-3{
+            left: 19px;
+            animation-duration: .7s;
+        }
+
+        .smk-4{
+            left: 11px;
+            animation-duration: .8s;
+        }
+
+        .smk-5{
+            left: 13px;
+            animation-duration: .9s;
+        }
+
+        .flame{
+            background-color: currentColor;
+            border-color: currentColor;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            position: relative;
+            transform: rotate(60deg) skew(0deg) scale(1);
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .flame.fliped{
+            transform: rotate(120deg) skew(0deg) scale(1);
+        }
+
+        .flame::before{
+            content: '';
+            position: absolute;
+            border-radius: 0 0 0 100%;
+            border-bottom-style: solid;
+            border-bottom-color: inherit;
+            border-bottom-width: 32px;
+            width: 32px;
+            height: 8px;
+            left: -16px;
+            top: -8px;
+        }
+
+        .red{
+            color: red;
+            top: 149px;
+            opacity: 0.7;
+            animation-name: burn-red;
+            animation-duration: 3ms;
+        }
+        .orange{
+            color: orange;
+            top: 119px;
+            opacity: 0.8;
+            box-shadow: 0 0 16px orange;
+        }
+        .yellow{
+            color: yellow;
+            top: 88px;
+            opacity: 0.9;
+            box-shadow: 0 0 16px yellow;
+        }
+        .white{
+            color: white;
+            top: 59px;
+            box-shadow: 0 0 16px white;
+        }
+
+        @keyframes burn-smoke{
+            0% { transform: rotate(0deg) scale(1); opacity: 1;}
+            100% {transform: rotate(360deg) scale(3); opacity: 0; top: 0;}
+        }
+
+        @keyframes burn-red{
+            0% { transform: rotate(120deg) skewX(0deg) scale(1.8)}
+            20% { transform: rotate(118deg) skewX(5deg) scale(2)}
+            40% { transform: rotate(120deg) skewX(0deg) scale(1.8)}
+            60% { transform: rotate(122deg) skewX(-5deg) scale(2)}
+            100% { transform: rotate(120deg) skewX(0deg) scale(1.8)}
+        }
+    </style>
+</head>
+<body>
+    <div class="greetings">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1>Happy Birthday, Slei🥳</h1>
+        <p> Happy Legality, Slei! I hope you like the cake (actually <br>
+            nalilito ako kung anong flavor HAHAHAHAHAH) kahit na hindi <br> 
+            edible. Try to blow the candle if you can😊 HAHWAHAWHAHAHA,<br> 
+            this is all I can offer for your birthday as your streak buddy🔥 <br>
+            please please please keep our streak make apoy apoy 🔥🔥.<br></p>
+        <p> Please don't judge the cake, for now yan palang kasi kaya ko😔 <br>
+            also nirent ko yung pusa na nakanta for you WHAHAHAHHAH joke. <br>
+            Enjoy your day! More birthdays to come!! 🤩🤩 <br>
+            <strong>- Jibirr</strong></p>
+
+        <audio controls autoplay loop src="ssstik.io_1742053398178.mp3" ></audio>
+    </div>
+    <div class="wrapper">
+        <div class="cake">
+            <div class="lyr lyr-1"></div>
+            <div class="lyr lyr-2"></div>
+            <div class="lyr lyr-3"></div>
+            <div class="box"></div>
+        </div>
+        <div class="candle"></div>
+        <div class="frame">
+            <div class="smoke smk-1"></div>
+            <div class="smoke smk-2"></div>
+            <div class="smoke smk-3"></div>
+            <div class="smoke smk-4"></div>
+            <div class="smoke smk-5"></div>
+            
+            <div class="flame red fliped"></div>
+            <div class="flame orange"></div>
+            <div class="flame yellow fliped"></div>
+            <div class="flame white"></div>
+        </div>
+    </div>
+</body>
+</html>
